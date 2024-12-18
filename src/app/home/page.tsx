@@ -1,7 +1,7 @@
 import { ImStatsDots } from "react-icons/im";
 import { FaUsers } from "react-icons/fa";
-import Footer from "@/app/components/footer";
-import Header from "@/app/components/header";
+import Footer from "@/components/footer";
+import Header from "@/components/header";
 import Image from "next/image";
 
 export default function Page() {
