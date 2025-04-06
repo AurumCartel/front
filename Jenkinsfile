@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "emilibadmin:latest"
-        CONTAINER_NAME = "emilib-admin"
+        IMAGE_NAME = "aurum-cartel:latest"
+        CONTAINER_NAME = "aurum-cartel"
     }
 
     stages {
@@ -28,7 +28,7 @@ pipeline {
                     fi
                     '''
                     echo 'Running the Docker container...'
-                    sh 'docker run -d --name ${CONTAINER_NAME} -p 3000:3000 ${IMAGE_NAME}'
+                    sh 'docker run -d --name ${CONTAINER_NAME} -p 4141:4141 ${IMAGE_NAME}'
                 }
             }
         }
